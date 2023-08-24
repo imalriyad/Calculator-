@@ -5,4 +5,9 @@ for (const button of btn) {
    button.style.boxShadow = ' -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);'
    button.style.borderRadius = '6px'
    button.style.margin = '10px'
+   button.addEventListener('click',function(){
+      let audio = document.createElement('audio')
+        audio.src = './btn.wav'
+        audio.play()
+   })
 }
